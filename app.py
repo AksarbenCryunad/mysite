@@ -38,7 +38,7 @@ def signup():
 # 로그인 api
 
 # 회원 가입 api
-@app.route('signup2', methods = ['post'])
+@app.route('/signup2', methods = ['post'])
 def signup2():
     # id, password, name 데이터를 받아온다
     input_id = request.form['id']
@@ -46,7 +46,7 @@ def signup2():
     input_name = request.form['name']
 
     # 사용가능한 아이디인가 확인
-    check_result = mydb.execute_query(querys.check_query, input_id)%
+    check_result = mydb.execute_query(querys.check_query, input_id)
     # check_result는 df
     if len(check_result) == 0:
         # 사용 가능한 아이디

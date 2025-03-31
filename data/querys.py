@@ -20,7 +20,7 @@ login_query = """
 signup_query = """
     INSERT INTO
     `user_info`
-    VALUES (%S, %S, %S)
+    VALUES (%s, %s, %s)
 """
 
 # 아이디 중복 체크 쿼리
