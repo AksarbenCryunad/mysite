@@ -60,7 +60,7 @@ def dashboard():
     x_data = list(result['시간'])
     # y축 데이터
     y_data = list(result['일별 수익률'])
-    y2_data = list(result['누적 수익률'])
+    y1_data = list(result['누적 수익률'])
     return render_template('dashboard.html', 
                            table_cols = cols_list,
                            table_data = dict_data,
